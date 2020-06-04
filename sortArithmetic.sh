@@ -11,4 +11,9 @@ arrayNum[result2]=$(( $a * $b + $c ))
 arrayNum[result3]=$(( $c + $a / $b ))
 arrayNum[result4]=$(( $a % $b + $c ))
 
-echo ${!arrayNum[@]}
+for (( i=0; i<=4; i++ ))
+do
+   arrayResult[$i]=${arrayNum["result"$i]}
+done
+echo ${arrayResult[@]}
+
