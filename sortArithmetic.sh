@@ -17,3 +17,10 @@ do
 done
 echo ${arrayResult[@]}
 
+echo "***************Descending*************** "
+for ((count=0;count<=4;count++))
+do
+   echo -e ${arrayResult[$count]}
+done | sort -nr
+
+
