@@ -23,4 +23,10 @@ do
    echo -e ${arrayResult[$count]}
 done | sort -nr
 
+echo "****************Ascending******************"
+for ((count=0;count<=4;count++))
+do
+        echo -e ${arrayResult[$count]}
+done | sort -n
+
 
